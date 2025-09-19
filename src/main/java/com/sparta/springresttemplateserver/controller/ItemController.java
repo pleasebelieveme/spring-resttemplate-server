@@ -16,6 +16,7 @@ public class ItemController {
         this.itemService = itemService;
     }
 
+    // http://localhost:8080/api/client/get-call-obj?query=Mac
     @GetMapping("/get-call-obj")
     public Item getCallObject(@RequestParam String query) {
         return itemService.getCallObject(query);
